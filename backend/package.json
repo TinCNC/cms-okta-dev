@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "my-project",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -20,16 +20,15 @@
     "strapi-plugin-email": "3.6.8",
     "strapi-plugin-upload": "3.6.8",
     "strapi-plugin-i18n": "3.6.8",
-    "strapi-connector-mongoose": "3.6.8",
-    "strapi-plugin-graphql": "3.6.8"
+    "strapi-connector-bookshelf": "3.6.8",
+    "knex": "0.21.18",
+    "sqlite3": "5.0.0"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "708ff5bd-92d8-4521-bc08-cc276bcc1ef5",
-    "template": "https://github.com/strapi/strapi-template-corporate",
-    "starter": "https://github.com/strapi/strapi-starter-gatsby-corporate"
+    "uuid": "2aafb84c-b5ab-4985-b735-4e198d5c0139"
   },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",

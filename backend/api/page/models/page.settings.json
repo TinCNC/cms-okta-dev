@@ -2,13 +2,13 @@
   "kind": "collectionType",
   "collectionName": "pages",
   "info": {
-    "name": "Page",
+    "name": "page",
     "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {
     "i18n": {
@@ -16,52 +16,8 @@
     }
   },
   "attributes": {
-    "shortName": {
+    "title": {
       "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "metadata": {
-      "type": "component",
-      "repeatable": false,
-      "component": "meta.metadata",
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "contentSections": {
-      "type": "dynamiczone",
-      "components": [
-        "sections.hero",
-        "sections.bottom-actions",
-        "sections.feature-columns-group",
-        "sections.feature-rows-group",
-        "sections.testimonials-group",
-        "sections.large-video",
-        "sections.rich-text",
-        "sections.pricing",
-        "sections.lead-form"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "status": {
-      "type": "enumeration",
-      "enum": [
-        "published",
-        "draft"
-      ],
-      "default": "draft",
-      "required": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -69,13 +25,41 @@
       }
     },
     "slug": {
+      "type": "string",
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
+        }
+      }
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "block": {
+      "type": "dynamiczone",
+      "components": [
+        "block.block"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "publish_at": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
         }
       },
-      "type": "string",
-      "regex": "^$|^[a-zA-Z/-]+$"
+      "type": "datetime"
     }
   }
 }
