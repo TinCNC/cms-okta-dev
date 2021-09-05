@@ -4,10 +4,18 @@ cms Strapi
 ## Run backend
 
 ```bash
-cd frontend
+cd backend
 yarn install
-yarn dev
+yarn develop
 ```
+
+IF asking user
+
+USER:
+kivanolai@gmail.com
+PASS:
+aaAA123456
+
 
 
 ## Run Frontend
